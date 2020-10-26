@@ -8,7 +8,6 @@
 <div align="center">
 
   [![Status](https://img.shields.io/badge/status-active-success.svg)]() 
-  [![GitHub Issues](https://img.shields.io/github/issues/kylelobo/The-Documentation-Compendium.svg)](https://github.com/mitchellciupak/Pokedex/issues)
   [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/mitchellciupak/Pokedex/pulls)
   [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
 
@@ -16,7 +15,7 @@
 
 ---
 
-<p align="center"> Few lines describing your project.
+<p align="center"> Search, Scroll and Explore every known Pokemon.
     <br> 
 </p>
 
@@ -32,34 +31,18 @@
 - [Acknowledgments](#acknowledgement)
 
 ## 🧐 About <a name = "about"></a>
-Write about 1-2 paragraphs describing the purpose of your project.
+Pokedex is a web app developed in React for Purdue College of Engineering IEEE Advanced React Certification. This app interacts with [PokeAPI](https://pokeapi.co/docs/v2) to bring you information about every Pokemon ever created. Search and Explore through this app created with the help of [Material-UI](https://material-ui.com/)
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
+1. Fork, Clone, or Download
+2. Install [Prerequisites](#prereqs)
+3. Run 'npm update'
+4. Run on of the following standard commands `npm start`, 'npm test`, or `npm run build`.
+
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
 
-### Prerequisites
-What things you need to install the software and how to install them.
-
-```
-Give examples
-```
-
-### Installing
-A step by step series of examples that tell you how to get a development env running.
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo.
+### Prerequisites <a name = ""></a>
+- [NodeJs](https://nodejs.org/en/)
 
 ## 🔧 Running the tests <a name = "tests"></a>
 Explain how to run the automated tests for this system.
@@ -79,7 +62,7 @@ Give an example
 ```
 
 ## 🎈 Usage <a name="usage"></a>
-Add notes about how to use the system.
+Visit https://mitchellciupak.github.io/Pokedex 
 
 ## 🚀 Deployment <a name = "deployment"></a>
 Add additional notes about how to deploy this on a live system.
@@ -88,7 +71,7 @@ Add additional notes about how to deploy this on a live system.
 - [Express](https://expressjs.com/) - Server Framework
 - [ReactJs](https://reactjs.org/) - Web Framework
 - [NodeJs](https://nodejs.org/en/) - Server Environment
-- [Travis-CI](google.com) - CI/CD
+- [Travis-CI](https://travis-ci.com/) - CI/CD
 
 ## ✍️ Authors <a name = "authors"></a>
 - [@mitchellciupak](https://github.com/mitchellciupak) - Sole Contributer 
@@ -96,11 +79,7 @@ Add additional notes about how to deploy this on a live system.
 ## 🎉 Acknowledgements <a name = "acknowledgement"></a>
 - Hat tip to anyone whose code was used
 - Inspiration
+ [@hadiahmed098](https://github.com/hadiahmed098)
 - References
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-### `npm start`
-### `npm test`
-### `npm run build`
