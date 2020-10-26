@@ -1,6 +1,19 @@
 import React from 'react';
+import { Grid } from "@material-ui/core";
+import PokeCard from "./PokeCard.js"
 
-class Demo3 extends React.Component {
+//set to take these attributes https://github.com/AtotheY/material-ui-ux-video/blob/master/src/constants.js
+const grid = () => {
+     const getPokeCard = pokeCardObj => {
+      return (
+        <Grid item xs={12} sm={4} md={3} >
+           <PokeCard {...pokeCardObj} />
+         </Grid>
+       );
+ };
+}
+
+class Content extends React.Component {
     constructor(props) {
         super(props)
         
@@ -42,4 +55,4 @@ class Demo3 extends React.Component {
     }
 }
 
-export default Demo3;
+export default Content;
