@@ -77,9 +77,13 @@ Add additional notes about how to deploy this on a live system.
 - [@mitchellciupak](https://github.com/mitchellciupak) - Sole Contributer 
 
 ## 🎉 Acknowledgements <a name = "acknowledgement"></a>
-- Hat tip to anyone whose code was used
+- Hat tip to anyone whose code was used 
+ [@SoftwareSaturdays](https://github.com/SoftwareSaturdays/2020-Fall-WebDev)
 - Inspiration
  [@hadiahmed098](https://github.com/hadiahmed098)
-- References
+- References:
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app)
+This project used [Material-UI](https://material-ui.com/)
+This project relies on [PokeAPI](https://pokeapi.co/)
 
