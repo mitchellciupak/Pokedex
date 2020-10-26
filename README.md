@@ -83,7 +83,9 @@ Add additional notes about how to deploy this on a live system.
  [@hadiahmed098](https://github.com/hadiahmed098)
 - References:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app)
-This project used [Material-UI](https://material-ui.com/)
-This project relies on [PokeAPI](https://pokeapi.co/)
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+This project used [Material-UI](https://material-ui.com/).
+
+This project relies on [PokeAPI](https://pokeapi.co/).
 
