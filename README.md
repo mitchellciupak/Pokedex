@@ -44,9 +44,6 @@ These instructions will get you a copy of the project up and running on your loc
 ### Prerequisites <a name = ""></a>
 - [NodeJs](https://nodejs.org/en/)
 
-## 🔧 Running the tests <a name = "tests"></a>
-Explain how to run the automated tests for this system.
-
 ## 🎈 Usage <a name="usage"></a>
 Visit https://mitchellciupak.github.io/Pokedex 
 
@@ -67,10 +64,7 @@ Add additional notes about how to deploy this on a live system.
 - Inspiration
  [@hadiahmed098](https://github.com/hadiahmed098)
 - References:
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-This project used [Material-UI](https://material-ui.com/).
-
-This project relies on [PokeAPI](https://pokeapi.co/) and [Bulbapedia](bulbapedia.bulbagarden.net).
+  - This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  - This project used [Material-UI](https://material-ui.com/).
+  - This project relies on [PokeAPI](https://pokeapi.co/) and [Bulbapedia](bulbapedia.bulbagarden.net).
 
