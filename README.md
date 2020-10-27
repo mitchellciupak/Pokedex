@@ -87,5 +87,5 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 This project used [Material-UI](https://material-ui.com/).
 
-This project relies on [PokeAPI](https://pokeapi.co/).
+This project relies on [PokeAPI](https://pokeapi.co/) and [Bulbapedia](bulbapedia.bulbagarden.net).
 

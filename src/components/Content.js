@@ -15,7 +15,7 @@ class Content extends React.Component {
         let search = "pikachu";
         let searching = false;
 
-        let limit = 1;
+        let limit = 10;
         let offset = 0;
         let url = "https://pokeapi.co/api/v2/pokemon?limit="+limit+"&offset="+offset;
 

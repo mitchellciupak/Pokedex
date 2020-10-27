@@ -95,7 +95,7 @@ export default function PrimarySearchAppBar() {
   // };
 
   return (
-    <AppBar position="static" title={<img src="public\favicon.ico" alt="favicon"/>}>
+    <AppBar position="static" title={<img src="public\favicon.ico" alt="favicon" className={classes.root} />}>
       <Toolbar>
         <Typography variant="h6" className={classes.title}>
           P
