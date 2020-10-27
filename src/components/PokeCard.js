@@ -7,14 +7,13 @@ import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import ShareIcon from "@material-ui/icons/Share";
-import { Avatar, IconButton, CardMedia } from "@material-ui/core";
+import { IconButton, CardMedia } from "@material-ui/core";
 
 const PokeCard = props => {
-  const { avatarUrl, title, subtitle, description, imageUrl } = props;
+  const { title, subtitle, description, imageUrl } = props;
   return (
     <Card>
       <CardHeader
-        avatar={<Avatar src={avatarUrl} />}
         action={
           <IconButton aria-label="settings">
             <ShareIcon />
