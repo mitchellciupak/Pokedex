@@ -6,7 +6,7 @@ class Content extends React.Component {
     constructor(props) {
         super(props)
         
-        this.getAPIData = this.fetchAPI.bind(this);
+        this.fetchAPI = this.fetchAPI.bind(this);
         this.state = {pokemon: []};
     }
 
@@ -15,7 +15,7 @@ class Content extends React.Component {
         let search = "pikachu";
         let searching = false;
 
-        let limit = 10;
+        let limit = 1;
         let offset = 0;
         let url = "https://pokeapi.co/api/v2/pokemon?limit="+limit+"&offset="+offset;
 
@@ -30,13 +30,13 @@ class Content extends React.Component {
     }
 
     componentDidMount() {
-         this.fetchAPI(); //beg fetch
+         this.fetchAPI();
     }
 
     getPokeCard(pokeObj){
         return (
             <Grid item xs={12} sm={4} md={3} >
-                <PokeCard {...pokeObj} />
+                <PokeCard name={pokeObj.name} url={pokeObj.url} />
             </Grid>
             );
     }
