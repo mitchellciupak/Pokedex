@@ -10,6 +10,9 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 const theme = createMuiTheme({
   palette: {
     type: "dark",
+    primary: {
+      main: '#ffcb05'
+    }
   }
 });
 
