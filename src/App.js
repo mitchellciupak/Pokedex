@@ -10,9 +10,10 @@ function App() {
     <Container fixed>
       <AppBar />
       <br></br>
-      <Content />
+      <Content/>
       <br></br>
       <Footer />
+      <br></br>
     </Container>
   )
 }

@@ -2,27 +2,26 @@ import React from 'react';
 import { Grid } from "@material-ui/core";
 import PokeCard from "./PokeCard.js"
 
+import Button from "@material-ui/core/Button";
+import CardActions from "@material-ui/core/CardActions";
+
 class Content extends React.Component {
     constructor(props) {
         super(props)
         
         this.fetchAPI = this.fetchAPI.bind(this);
-        this.state = {pokemon: []};
+        this.state = {pokemon: [], offset:0};
     }
 
-    async fetchAPI() {
-        
+    async fetchAPI(offset) {
         let search = "pikachu";
         let searching = false;
 
-        let limit = 10;
-        let offset = 0;
+        let limit = 24;
         let url = "https://pokeapi.co/api/v2/pokemon?limit="+limit+"&offset="+offset;
-
         if(searching === true){
             url = "https://pokeapi.co/api/v2/pokemon/"+{search};
         }
-
         const response = await fetch(url);
         const responseJSON = await response.json();
         const responsePokemon = responseJSON.results.map(pokeObj => this.getPokeCard(pokeObj));
@@ -30,7 +29,7 @@ class Content extends React.Component {
     }
 
     componentDidMount() {
-         this.fetchAPI();
+         this.fetchAPI(this.state.offset);
     }
 
     getPokeCard(pokeObj){
@@ -41,10 +40,20 @@ class Content extends React.Component {
             );
     }
 
+    updateOffset() {
+        let rand = parseInt((Math.floor(Math.random() * 893) - 24));
+        this.setState({offset: rand});
+        this.fetchAPI(rand);
+    }
+
     render () {
         return (
-            <Grid container spacing={2}>
+            <Grid container spacing={2} justify="center">
               {this.state.pokemon}
+              <br></br>
+              <CardActions>
+                <Button variant="contained" color="primary" size="large" onClick={() => { this.updateOffset(); }}>MORE POKEMON</Button>
+              </CardActions>
             </Grid>
           );
     }

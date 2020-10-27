@@ -3,7 +3,7 @@ import Card from "@material-ui/core/Card";
 import CardHeader from "@material-ui/core/CardHeader";
 import CardActions from "@material-ui/core/CardActions";
 import Button from "@material-ui/core/Button";
-import { IconButton, CardMedia } from "@material-ui/core";
+import { CardMedia } from "@material-ui/core";
 
 const capitalize = (s) => {
   if (typeof s !== 'string') return ''
@@ -13,16 +13,15 @@ const capitalize = (s) => {
 class PokeCard extends React.Component {
   constructor(props) {
     super(props)
-
     this.fetchAPI = this.fetchAPI.bind(this);
     this.state = {imgUrl:"", TypeList:"", MoreInfo:[]};
+
   }
   
   async fetchAPI() {
 
     const response = await fetch(this.props.url);
     const responseJSON = await response.json();
-    // console.log(responseJSON);
     this.setState ({
       imgUrl: responseJSON.sprites.front_default,
       TypeList: responseJSON.types.map(type => type.type.name),
@@ -34,6 +33,12 @@ class PokeCard extends React.Component {
 
   componentDidMount() {
     this.fetchAPI();
+  }
+
+  componentDidUpdate(prevProps) {
+    if (prevProps.name !== this.props.name) {
+      this.fetchAPI();
+    }
   }
 
   render () {
@@ -51,9 +56,9 @@ class PokeCard extends React.Component {
           title={name}
           subheader={subheader}
         />
-        <CardMedia style={{ height: "100px" }} image={this.state.imgUrl} />
+        <CardMedia style={{ height: "225px" }} image={this.state.imgUrl} />
         <CardActions>
-          <Button size="small" href={wikiLink}>MORE INFO</Button>
+          <Button size="large" href={wikiLink} target="_blank">MORE INFO</Button>
         </CardActions>
       </Card>
     );
