@@ -47,20 +47,6 @@ These instructions will get you a copy of the project up and running on your loc
 ## 🔧 Running the tests <a name = "tests"></a>
 Explain how to run the automated tests for this system.
 
-### Break down into end to end tests
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-Explain what these tests test and why
-
-```
-Give an example
-```
-
 ## 🎈 Usage <a name="usage"></a>
 Visit https://mitchellciupak.github.io/Pokedex 
 
@@ -68,7 +54,6 @@ Visit https://mitchellciupak.github.io/Pokedex
 Add additional notes about how to deploy this on a live system.
 
 ## ⛏️ Built Using <a name = "built_using"></a>
-- [Express](https://expressjs.com/) - Server Framework
 - [ReactJs](https://reactjs.org/) - Web Framework
 - [NodeJs](https://nodejs.org/en/) - Server Environment
 - [Travis-CI](https://travis-ci.com/) - CI/CD
