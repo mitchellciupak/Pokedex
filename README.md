@@ -56,7 +56,7 @@ Add additional notes about how to deploy this on a live system.
 - [Travis-CI](https://travis-ci.com/) - CI/CD
 
 ## ✍️ Authors <a name = "authors"></a>
-- [@mitchellciupak](https://github.com/mitchellciupak) - Sole Contributer 
+- [@mitchellciupak](https://github.com/mitchellciupak) - Sole Contributor 
 
 ## 🎉 Acknowledgements <a name = "acknowledgement"></a>
 - Hat tip to anyone whose code was used 
